@@ -1,0 +1,10 @@
+body {
+    background-color: #161A1A;
+}
+header {
+    @include flex-props;
+    @extend %container;
+    .Main-nav {
+        @include flex-props;
+    }
+}
