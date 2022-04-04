@@ -75,8 +75,15 @@ header .navbar, header .Main-nav, header .End-nav {
           align-items: center;
 }
 
+.s-1 {
+  max-width: 1480px;
+  width: 100%;
+  margin: auto;
+}
+
 body {
   background-color: #161A1A;
+  height: 1800px;
 }
 
 header {
@@ -91,15 +98,21 @@ header {
           align-items: center;
 }
 
+header .navbar {
+  position: fixed;
+  margin-top: 80px;
+}
+
 header .logo {
   margin-right: 44px;
 }
 
 header .Main-nav {
   color: #707070;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   width: 286px;
+  margin-right: 1000px;
 }
 
 header .Main-nav .last-child {
@@ -114,9 +127,57 @@ header .Main-nav .last-child {
 
 header .End-nav .font {
   font-family: fontawesome;
+  border-radius: 15px;
+  padding: 9px 15px;
+  outline: 0;
+  border: 0;
+  background-color: #898B91;
+  color: white;
+  margin-right: 25px;
 }
 
 header .End-nav .font::first-letter {
   text-transform: lowercase;
+}
+
+header .End-nav .User {
+  margin-right: 10px;
+}
+
+header .End-nav .Username {
+  color: white;
+  margin-right: 5px;
+  font-family: "Lato", sans-serif;
+}
+
+.s-1 {
+  padding-top: 118px;
+}
+
+.s-1 .s-1-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+}
+
+.s-1 .Flow {
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+.s-1 .color {
+  color: white;
+}
+
+.s-1 .s-1-start-2 .image-1 {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 /*# sourceMappingURL=global.css.map */

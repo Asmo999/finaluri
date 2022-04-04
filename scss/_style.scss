@@ -1,11 +1,16 @@
 body {
     background-color: #161A1A;
+    height: 1800px
 }
 header {
     @include flex-props;
     @extend %container;
     .navbar {
         @extend %flex-props;
+        position:fixed;
+        margin-top: 80px;
+        
+        
     }
     .logo {
         margin-right: 44px;
@@ -13,9 +18,10 @@ header {
     .Main-nav {
         @extend %flex-props;
         color: #707070;
-        font-family: 'Lato', sans-serif;
+        font-family: $main-font;
         font-size: 20px;
         width: 286px;
+        margin-right: 1000px;
         // last child ratomgac ar mushaobs
         .last-child {
             background: linear-gradient(#161A1A ,#161A1A) padding-box,
@@ -32,11 +38,50 @@ header {
     }
     .End-nav {
         @extend %flex-props;
+        
         .font {
             font-family: fontawesome;
+            border-radius: 15px;
+            padding: 9px 15px;
+            outline: 0;
+            border: 0;
+            background-color: #898B91;
+            color: white;
+            margin-right: 25px;
             &::first-letter {
                 text-transform: lowercase;
             }
+        }
+        .User {
+            margin-right: 10px;
+        }
+        .Username {
+            color: white;
+            margin-right: 5px;
+            font-family: $main-font;
+        }
+        
+            
+        
+    }
+}
+.s-1 {
+    @extend %section;
+    padding-top: 118px;
+    .s-1-start {
+        @include flex-props;
+        font-size: 24px;
+    }
+    .Flow {
+        font-family: $main-font;
+        color: white;
+    }
+    .color {
+        color: white;
+    }
+    .s-1-start-2{
+        .image-1 {
+            filter: blur(5px);
         }
     }
 }
