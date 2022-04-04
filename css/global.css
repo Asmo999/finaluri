@@ -103,9 +103,20 @@ header .Main-nav {
 }
 
 header .Main-nav .last-child {
-  border: 4px solid #9B2DEF;
-  border-radius: 25px;
+  background: linear-gradient(#161A1A, #161A1A) padding-box, linear-gradient(30deg, #2D9BEF, #9B2DEF) border-box;
+  border-width: 4px;
+  border-style: solid;
   padding: 8px 30px;
+  border-color: transparent;
+  border-radius: 30px;
   color: #2DCEEF;
+}
+
+header .End-nav .font {
+  font-family: fontawesome;
+}
+
+header .End-nav .font::first-letter {
+  text-transform: lowercase;
 }
 /*# sourceMappingURL=global.css.map */
