@@ -107,6 +107,10 @@ header {
             .play-button{
                 @extend %play-button;
             .blurry-box {
+                @extend %blurry-box;
+            }
+            .color-play{
+                @extend %color-play;
                 @extend %color-play1;
             }
         }
