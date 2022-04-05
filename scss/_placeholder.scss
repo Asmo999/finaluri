@@ -13,3 +13,45 @@
     width: 100%;
     margin: auto;
 }
+%play-button {
+    position: absolute;
+    z-index: -1;
+    padding-left: 110px;
+    margin-top: 210px;
+}
+%blurry-box {
+    width: 60px;
+    height: 60px;
+    background-color: #1C1C1C;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 70%;
+}
+%color-play {
+    color: white;
+    position: relative;
+    width: 20.57px;
+    height: 24px;
+    left: 26px;
+    top: 21px;
+}
+%image-1 {
+    filter: blur(5px);
+    position: relative;
+    z-index: -4;
+}
+%image-1-outline {
+    position: absolute;
+    margin-left: 100px;
+    z-index: -3;
+}
+%image-1-cover {
+    position: absolute ;
+    z-index: -2;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+%color-play1{
+    left: 16px;
+    top: 15px;
+}

@@ -63,7 +63,7 @@ header {
   margin: auto;
 }
 
-header .navbar, header .Main-nav, header .End-nav {
+header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,6 +79,56 @@ header .navbar, header .Main-nav, header .End-nav {
   max-width: 1480px;
   width: 100%;
   margin: auto;
+}
+
+.s-1 .box-flex .s-1-box .play-button, .s-1 .box-flex .s-1-box-2 .play-button, .s-1 .box-flex .s-1-box-3 .play-button {
+  position: absolute;
+  z-index: -1;
+  padding-left: 110px;
+  margin-top: 210px;
+}
+
+.s-1 .box-flex .s-1-box .play-button .blurry-box, .s-1 .box-flex .s-1-box-2 .play-button .blurry-box, .s-1 .box-flex .s-1-box-3 .play-button .blurry-box {
+  width: 60px;
+  height: 60px;
+  background-color: #1C1C1C;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 70%;
+}
+
+.s-1 .box-flex .s-1-box .play-button .color-play, .s-1 .box-flex .s-1-box-2 .play-button .color-play, .s-1 .box-flex .s-1-box-3 .play-button .color-play {
+  color: white;
+  position: relative;
+  width: 20.57px;
+  height: 24px;
+  left: 26px;
+  top: 21px;
+}
+
+.s-1 .box-flex .s-1-box .image-1, .s-1 .box-flex .s-1-box-2 .image-1, .s-1 .box-flex .s-1-box-3 .image-1 {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  position: relative;
+  z-index: -4;
+}
+
+.s-1 .box-flex .s-1-box .image-1-outline, .s-1 .box-flex .s-1-box-2 .image-1-outline, .s-1 .box-flex .s-1-box-3 .image-1-outline {
+  position: absolute;
+  margin-left: 100px;
+  z-index: -3;
+}
+
+.s-1 .box-flex .s-1-box .image-1-cover, .s-1 .box-flex .s-1-box-2 .image-1-cover, .s-1 .box-flex .s-1-box-3 .image-1-cover {
+  position: absolute;
+  z-index: -2;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.s-1 .box-flex .s-1-box-2 .play-button .color-play, .s-1 .box-flex .s-1-box-3 .play-button .color-play {
+  left: 16px;
+  top: 15px;
 }
 
 body {
@@ -165,6 +215,7 @@ header .End-nav .Username {
       -ms-flex-align: center;
           align-items: center;
   font-size: 24px;
+  margin-bottom: 30px;
 }
 
 .s-1 .Flow {
@@ -174,10 +225,5 @@ header .End-nav .Username {
 
 .s-1 .color {
   color: white;
-}
-
-.s-1 .s-1-start-2 .image-1 {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
 }
 /*# sourceMappingURL=global.css.map */

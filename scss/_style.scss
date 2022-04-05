@@ -71,6 +71,7 @@ header {
     .s-1-start {
         @include flex-props;
         font-size: 24px;
+        margin-bottom: 30px;
     }
     .Flow {
         font-family: $main-font;
@@ -79,9 +80,70 @@ header {
     .color {
         color: white;
     }
-    .s-1-start-2{
-        .image-1 {
-            filter: blur(5px);
+    .box-flex {
+        @extend %flex-props;
+        .s-1-box{
+            .play-button{
+                @extend %play-button;
+                .blurry-box {
+                @extend %blurry-box;
+            }
+            .color-play{
+                @extend %color-play;
+            }
         }
+        
+            .image-1 {
+                @extend %image-1;
+            }
+            .image-1-outline {
+                @extend %image-1-outline;
+         }
+            .image-1-cover {
+                @extend %image-1-cover;
+            }
+        }
+        .s-1-box-2{
+            .play-button{
+                @extend %play-button;
+            .blurry-box {
+                @extend %color-play1;
+            }
+        }
+            
+            .image-1 {
+                 @extend %image-1;
+                
+            }
+            .image-1-outline {
+                 @extend %image-1-outline;
+            }
+            .image-1-cover {
+                @extend %image-1-cover;
+            }
+        }
+        .s-1-box-3{
+                .play-button{
+                    @extend %play-button;
+                .blurry-box {
+                    @extend %blurry-box;
+                }
+                .color-play{
+                    @extend %color-play;
+                    @extend %color-play1;
+                }
+            }
+                
+                .image-1 {
+                    @extend %image-1;
+                }
+                .image-1-outline {
+                    @extend %image-1-outline;
+                }
+                .image-1-cover {
+                    @extend %image-1-cover;
+                }
+            }    
     }
 }
+    
