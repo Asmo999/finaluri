@@ -57,13 +57,13 @@ a {
           box-sizing: border-box;
 }
 
-header {
+header, .s-3 {
   max-width: 1800px;
   width: 100%;
   margin: auto;
 }
 
-header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex {
+header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex, .s-2 .s-2-start, .s-2 .s-2-end {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +75,7 @@ header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex {
           align-items: center;
 }
 
-.s-1 {
+.s-1, .s-2 {
   max-width: 1480px;
   width: 100%;
   margin: auto;
@@ -83,7 +83,7 @@ header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex {
 
 .s-1 .box-flex .s-1-box .play-button, .s-1 .box-flex .s-1-box-2 .play-button, .s-1 .box-flex .s-1-box-3 .play-button {
   position: absolute;
-  z-index: -1;
+  z-index: -3;
   padding-left: 110px;
   margin-top: 210px;
 }
@@ -110,18 +110,18 @@ header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex {
   -webkit-filter: blur(5px);
           filter: blur(5px);
   position: relative;
-  z-index: -4;
+  z-index: -6;
 }
 
 .s-1 .box-flex .s-1-box .image-1-outline, .s-1 .box-flex .s-1-box-2 .image-1-outline, .s-1 .box-flex .s-1-box-3 .image-1-outline {
   position: absolute;
   margin-left: 100px;
-  z-index: -3;
+  z-index: -5;
 }
 
 .s-1 .box-flex .s-1-box .image-1-cover, .s-1 .box-flex .s-1-box-2 .image-1-cover, .s-1 .box-flex .s-1-box-3 .image-1-cover {
   position: absolute;
-  z-index: -2;
+  z-index: -4;
   margin-left: 50px;
   margin-top: 70px;
 }
@@ -129,6 +129,27 @@ header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex {
 .s-1 .box-flex .s-1-box-2 .play-button .color-play, .s-1 .box-flex .s-1-box-3 .play-button .color-play {
   left: 16px;
   top: 15px;
+}
+
+.s-1 .box-flex .s-1-box .text2-s-1-image, .s-1 .box-flex .s-1-box-2 .text2-s-1-image-2, .s-1 .box-flex .s-1-box-3 .text2-s-1-image-3 {
+  position: absolute;
+  z-index: -1;
+  margin-top: 270px;
+  margin-left: 265px;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  color: #D5D5D5;
+  opacity: 80%;
+}
+
+.s-1 .box-flex .s-1-box .text-s-1-image, .s-1 .box-flex .s-1-box-2 .text-s-1-image-2, .s-1 .box-flex .s-1-box-3 .text-s-1-image-3 {
+  position: absolute;
+  z-index: -2;
+  margin-top: 145px;
+  margin-left: 265px;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  color: white;
 }
 
 body {
@@ -225,5 +246,88 @@ header .End-nav .Username {
 
 .s-1 .color {
   color: white;
+}
+
+.s-1 .box-flex .s-1-box-2 .text-s-1-image-2 {
+  text-align: center;
+}
+
+.s-2 {
+  padding-top: 90px;
+  margin-bottom: 56px;
+}
+
+.s-2 .s-2-start .s-2-start-text {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+.s-2 .s-2-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.s-2 .s-2-end .box-1 .box-text-1 {
+  width: 225px;
+  text-align: center;
+  color: white;
+}
+
+.s-2 .s-2-end .box-1 .box-text-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 225px;
+  color: #99999F;
+}
+
+.s-3 {
+  background-color: #3A3A3D;
+  border-radius: 13px;
+}
+
+.s-3 .s-3-flex {
+  padding: 14px;
+}
+
+.s-3 .s-3-flex .s-3-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.s-3 .s-3-flex .s-3-start .s-3-start-1 .queen-img {
+  width: 78px;
+  height: 78px;
+  margin-right: 14px;
+}
+
+.s-3 .s-3-flex .s-3-start .s-3-start-2 {
+  font-family: "Lato", sans-serif;
+  padding: 16px;
+}
+
+.s-3 .s-3-flex .s-3-start .s-3-start-2 .s-3-start-2-1 {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.s-3 .s-3-flex .s-3-start .s-3-start-2 .s-3-start-2-2 {
+  font-size: 16px;
+  color: #99999F;
+}
+
+.s-3 .s-3-flex .s-3-start .s-3-start-3 {
+  padding: 28px;
+}
+
+.s-3 .s-3-flex .s-3-start .s-3-start-3 .s-3-start-3-1 {
+  margin-right: 17px;
 }
 /*# sourceMappingURL=global.css.map */

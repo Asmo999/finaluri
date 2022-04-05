@@ -83,6 +83,12 @@ header {
     .box-flex {
         @extend %flex-props;
         .s-1-box{
+            .text2-s-1-image{
+                @extend %s-1-image-text-2;
+            }
+            .text-s-1-image {
+                @extend %s-1-image-text;
+            }
             .play-button{
                 @extend %play-button;
                 .blurry-box {
@@ -104,6 +110,13 @@ header {
             }
         }
         .s-1-box-2{
+            .text2-s-1-image-2{
+                @extend %s-1-image-text-2;
+            }
+            .text-s-1-image-2 {
+                @extend %s-1-image-text;
+                text-align: center;
+            }
             .play-button{
                 @extend %play-button;
             .blurry-box {
@@ -127,6 +140,12 @@ header {
             }
         }
         .s-1-box-3{
+            .text2-s-1-image-3{
+                @extend %s-1-image-text-2;
+            }
+            .text-s-1-image-3 {
+                @extend %s-1-image-text;
+            }
                 .play-button{
                     @extend %play-button;
                 .blurry-box {
@@ -147,7 +166,77 @@ header {
                 .image-1-cover {
                     @extend %image-1-cover;
                 }
+
             }    
     }
 }
-    
+.s-2 {
+    @extend %section;
+    padding-top: 90px;
+    margin-bottom: 56px;
+    .s-2-start{
+        @extend %flex-props;
+        .s-2-start-text {
+            font-family: $main-font;
+            font-size: 24px;
+            color: white;
+        }
+    }
+    .s-2-end {
+        @extend %flex-props;
+        display: flex;
+        .box-1 {
+            .box-text-1 {
+                width: 225px;
+                text-align: center;
+                color: white ;
+            }
+            .box-text-2 {
+                display: flex;
+                justify-content: center;
+                width: 225px;
+                color: #99999F ;
+            }
+        }
+    }
+}
+.s-3 {
+    @extend %container;
+    background-color: #3A3A3D;
+    border-radius: 13px;
+    .s-3-flex {
+        padding: 14px;
+        .s-3-start{
+            display: flex;
+            .s-3-start-1 {
+                .queen-img {
+                width: 78px;
+                height: 78px;
+                margin-right: 14px; 
+        }
+            }
+        .s-3-start-2{
+            font-family: $main-font;
+            
+            padding: 16px;
+            .s-3-start-2-1 {
+                font-size: 16px;
+                color: white;
+                margin-bottom: 10px;
+            }
+            .s-3-start-2-2{
+                font-size: 16px;
+                color: #99999F;
+            }
+          
+        }
+        .s-3-start-3 {
+            padding: 28px;
+            .s-3-start-3-1 {
+                margin-right: 17px;
+            }
+        }
+        }
+    }
+        
+}

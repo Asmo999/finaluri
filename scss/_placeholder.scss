@@ -15,7 +15,7 @@
 }
 %play-button {
     position: absolute;
-    z-index: -1;
+    z-index: -3;
     padding-left: 110px;
     margin-top: 210px;
 }
@@ -38,20 +38,39 @@
 %image-1 {
     filter: blur(5px);
     position: relative;
-    z-index: -4;
+    z-index: -6;
 }
 %image-1-outline {
     position: absolute;
     margin-left: 100px;
-    z-index: -3;
+    z-index: -5;
 }
 %image-1-cover {
     position: absolute ;
-    z-index: -2;
+    z-index: -4;
     margin-left: 50px;
     margin-top: 70px;
 }
 %color-play1{
     left: 16px;
     top: 15px;
+}
+%s-1-image-text-2 {
+    position: absolute;
+    z-index: -1;
+    margin-top: 270px;
+    margin-left: 265px;
+    font-size: 12px;
+    font-family: $main-font; 
+    color: #D5D5D5;
+    opacity: 80%;
+}
+%s-1-image-text {
+    position: absolute;
+    z-index: -2;
+    margin-top: 145px;
+    margin-left: 265px;
+    font-size: 14px;
+    font-family: $main-font; 
+    color: white;
 }
