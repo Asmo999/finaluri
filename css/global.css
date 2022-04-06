@@ -63,7 +63,7 @@ header, .s-3 {
   margin: auto;
 }
 
-header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex, .s-2 .s-2-start, .s-2 .s-2-end, .s-3 .s-3-flex, .s-3 .s-3-flex .s-3-end, .s-4 .s-2-end, .s-5 .s-5-start, .s-5 .s-2-end {
+header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex, .s-2 .s-2-start, .s-2 .s-2-end, .s-3 .s-3-flex, .s-3 .s-3-flex .s-3-end, .s-4 .s-2-end, .s-5 .s-5-start, .s-5 .s-2-end, .s-6 .s-6-start, .s-6 .flex-box-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +75,7 @@ header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex, .s-2 .s-2-sta
           align-items: center;
 }
 
-.s-1, .s-2, .s-4, .s-5 {
+.s-1, .s-2, .s-4, .s-5, .s-6 {
   max-width: 1480px;
   width: 100%;
   margin: auto;
@@ -425,5 +425,28 @@ audio::-webkit-media-controls-current-time-display {
           justify-content: center;
   width: 225px;
   color: #99999F;
+}
+
+.s-6 .s-6-start {
+  margin-bottom: 5px;
+}
+
+.s-6 .s-6-start .s-6-start-text {
+  color: white;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+}
+
+.s-6 .s-6-start .s-6-start-text-2 {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #D5D5D5;
+}
+
+.s-6 .s-6-mid {
+  color: #99999F;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=global.css.map */

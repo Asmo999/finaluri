@@ -342,3 +342,31 @@ audio::-webkit-media-controls-current-time-display {
         }
     }
 }
+.s-6{
+    @extend %section;
+    .s-6-start {
+        @extend %flex-props;
+        margin-bottom: 5px;
+        .s-6-start-text {
+            color: white;
+            font-size: 24px;
+            font-family: $main-font;
+        }
+        .s-6-start-text-2 {
+            font-family: $main-font;
+            font-size: 16px;
+            color: #D5D5D5;
+            // margin-bottom: 30px;
+        }
+    }
+    .s-6-mid {
+        color: #99999F;
+        font-size: 14px;
+        font-family: $main-font;
+        margin-bottom: 10px
+
+    }
+    .flex-box-1{
+        @extend %flex-props;
+    }
+}
