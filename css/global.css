@@ -63,7 +63,7 @@ header, .s-3 {
   margin: auto;
 }
 
-header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex, .s-2 .s-2-start, .s-2 .s-2-end {
+header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex, .s-2 .s-2-start, .s-2 .s-2-end, .s-3 .s-3-flex, .s-3 .s-3-flex .s-3-end, .s-4 .s-2-end, .s-5 .s-5-start, .s-5 .s-2-end {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +75,7 @@ header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex, .s-2 .s-2-sta
           align-items: center;
 }
 
-.s-1, .s-2 {
+.s-1, .s-2, .s-4, .s-5 {
   max-width: 1480px;
   width: 100%;
   margin: auto;
@@ -261,6 +261,7 @@ header .End-nav .Username {
   font-family: "Lato", sans-serif;
   font-size: 24px;
   color: white;
+  margin-bottom: 30px;
 }
 
 .s-2 .s-2-end {
@@ -329,5 +330,100 @@ header .End-nav .Username {
 
 .s-3 .s-3-flex .s-3-start .s-3-start-3 .s-3-start-3-1 {
   margin-right: 17px;
+}
+
+.s-3 .s-3-flex .s-3-mid .audio {
+  border: 0;
+  outline: 0;
+}
+
+.s-3 .s-3-flex .s-3-end .end-text {
+  color: white;
+  font-family: "Lato", sans-serif;
+  margin-right: 30px;
+}
+
+.s-3 .s-3-flex .s-3-end .just-hover .color:hover {
+  color: #680e0e;
+}
+
+.s-3 .s-3-flex .s-3-end .just-hover .color-2:hover {
+  color: #361c27;
+}
+
+.s-3 .s-3-flex .s-3-end .just-hover .color-3:hover {
+  color: #1c3623;
+}
+
+.s-3 .s-3-flex .s-3-end .just-hover .color-4:hover {
+  color: #a78015;
+}
+
+.s-3 .s-3-flex .s-3-end .just-hover .color-5:hover {
+  color: #ffd000;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #3A3A3D;
+}
+
+audio::-webkit-media-controls-play-button {
+  color: white;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  color: white;
+  opacity: 80%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: white;
+  opacity: 80%;
+}
+
+.s-4 {
+  margin-top: 30px;
+}
+
+.s-5 {
+  padding-top: 90px;
+  margin-bottom: 56px;
+}
+
+.s-5 .s-5-start .s-2-start-text {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.s-5 .s-5-start .s-2-start-text-2 {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #D5D5D5;
+  margin-bottom: 30px;
+}
+
+.s-5 .s-2-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.s-5 .s-2-end .box-1 .box-text-1 {
+  width: 225px;
+  text-align: center;
+  color: white;
+}
+
+.s-5 .s-2-end .box-1 .box-text-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 225px;
+  color: #99999F;
 }
 /*# sourceMappingURL=global.css.map */

@@ -1,5 +1,5 @@
 body {
-    background-color: #161A1A;
+    background-color: $main-color;
     height: 1800px
 }
 header {
@@ -24,7 +24,7 @@ header {
         margin-right: 1000px;
         // last child ratomgac ar mushaobs
         .last-child {
-            background: linear-gradient(#161A1A ,#161A1A) padding-box,
+            background: linear-gradient($main-color ,$main-color) padding-box,
              linear-gradient(30deg,#2D9BEF ,#9B2DEF) border-box;
             border-width: 4px;
             border-style: solid;
@@ -180,6 +180,7 @@ header {
             font-family: $main-font;
             font-size: 24px;
             color: white;
+            margin-bottom: 30px;
         }
     }
     .s-2-end {
@@ -205,6 +206,7 @@ header {
     background-color: #3A3A3D;
     border-radius: 13px;
     .s-3-flex {
+        @extend %flex-props;
         padding: 14px;
         .s-3-start{
             display: flex;
@@ -237,6 +239,106 @@ header {
             }
         }
         }
+        .s-3-mid{
+            .audio {
+                border: 0;
+                outline: 0;
+            }
+        }
+        .s-3-end {
+            @extend %flex-props;
+            .end-text{
+                color: white;
+                font-family: $main-font;
+                margin-right: 30px
+            }
+            .just-hover{
+                    .color{
+                        &:hover{
+                            color: rgb(104, 14, 14)
+                        }
+                    }
+                    .color-2{
+                        &:hover{
+                            color: rgb(54, 28, 39)
+                        }
+                    }
+                    .color-3{
+                        &:hover{
+                            color: rgb(28, 54, 35)
+                        }
+                    }
+                    .color-4{
+                        &:hover{
+                            color: rgb(167, 128, 21)
+                        }
+                    }
+                    .color-5{
+                        &:hover{
+                            color: rgb(255, 208, 0)
+                        }
+                    }
+            }
+        }
     }
         
+}
+     audio::-webkit-media-controls-panel {
+     background-color: #3A3A3D;
+     }
+audio::-webkit-media-controls-play-button {
+    color: white;
+}
+audio::-webkit-media-controls-time-remaining-display {
+    color: white;
+    opacity: 80%;
+}
+audio::-webkit-media-controls-current-time-display {
+    color: white;
+    opacity: 80%;
+}
+.s-4{
+    @extend %section;
+    margin-top: 30px;
+    .s-2-end{
+        @extend %flex-props;
+
+    }
+}
+.s-5 {
+    @extend %section;
+    padding-top: 90px;
+    margin-bottom: 56px;
+    .s-5-start{
+        @extend %flex-props;
+        .s-2-start-text {
+            font-family: $main-font;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 30px;
+        }
+        .s-2-start-text-2 {
+            font-family: $main-font;
+            font-size: 16px;
+            color: #D5D5D5;
+            margin-bottom: 30px;
+        }
+    }
+    .s-2-end {
+        @extend %flex-props;
+        display: flex;
+        .box-1 {
+            .box-text-1 {
+                width: 225px;
+                text-align: center;
+                color: white ;
+            }
+            .box-text-2 {
+                display: flex;
+                justify-content: center;
+                width: 225px;
+                color: #99999F ;
+            }
+        }
+    }
 }
