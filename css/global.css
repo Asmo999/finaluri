@@ -188,6 +188,7 @@ header .Main-nav {
   font-size: 20px;
   width: 286px;
   margin-right: 1000px;
+  cursor: pointer;
 }
 
 header .Main-nav .last-child {
@@ -225,9 +226,45 @@ header .End-nav .Username {
   font-family: "Lato", sans-serif;
 }
 
+header .End-nav .dropdown {
+  cursor: pointer;
+}
+
+.mobile-header .mob-start {
+  margin: auto;
+  font-size: 50px;
+  color: white;
+}
+
 @media (max-width: 1823px) {
   header .Main-nav {
     margin-right: 700px;
+  }
+}
+
+@media (max-width: 1523px) {
+  header .Main-nav {
+    margin-right: 300px;
+  }
+}
+
+@media (max-width: 1123px) {
+  header .Main-nav {
+    margin-right: 150px;
+    -webkit-transition: 0 0.3s;
+    transition: 0 0.3s;
+  }
+}
+
+@media (max-width: 970px) {
+  .header-flex .logo {
+    display: none;
+  }
+  .header-flex .Main-nav {
+    display: none;
+  }
+  .header-flex .End-nav {
+    display: none;
   }
 }
 

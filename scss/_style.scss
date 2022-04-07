@@ -24,6 +24,7 @@ header {
         font-size: 20px;
         width: 286px;
         margin-right: 1000px;
+        cursor: pointer;
 
         // last child ratomgac ar mushaobs
         .last-child {
@@ -62,7 +63,18 @@ header {
             color: white;
             margin-right: 5px;
             font-family: $main-font;
+
         }
+        .dropdown{
+            cursor: pointer;
+        }
+    }
+}
+.mobile-header{
+    .mob-start{
+        margin: auto;
+        font-size: 50px;
+        color: white;
     }
 }
 @media (max-width: 1823px) {
@@ -72,6 +84,35 @@ header {
         }
     }
 }
+@media (max-width: 1523px) {
+    header{
+        .Main-nav{
+            margin-right: 300px;
+        }
+    }
+}
+@media (max-width: 1123px) {
+    header{
+        .Main-nav{
+            margin-right: 150px;
+            transition: 0 0.3s 
+    
+        }
+    }
+}
+@media (max-width: 970px) {
+    .header-flex{
+        .logo{
+            display: none;
+        }
+        .Main-nav{
+            display: none;
+        }
+        .End-nav{
+            display: none;
+        }
+    }
+}  
 .s-1 {
     @extend %section;
     padding-top: 118px;
