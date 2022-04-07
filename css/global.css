@@ -157,6 +157,10 @@ body {
   height: 1800px;
 }
 
+* {
+  font-family: 'Lato', sans-serif;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,6 +223,12 @@ header .End-nav .Username {
   color: white;
   margin-right: 5px;
   font-family: "Lato", sans-serif;
+}
+
+@media (max-width: 1823px) {
+  header .Main-nav {
+    margin-right: 700px;
+  }
 }
 
 .s-1 {

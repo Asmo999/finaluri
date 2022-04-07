@@ -2,6 +2,10 @@ body {
     background-color: $main-color;
     height: 1800px
 }
+*{
+    font-family: 'Lato', sans-serif;
+    // wish i added it sooner
+}
 header {
     @include flex-props;
     @extend %container;
@@ -9,8 +13,6 @@ header {
         @extend %flex-props;
         position:fixed;
         margin-top: 80px;
-        
-        
     }
     .logo {
         margin-right: 44px;
@@ -22,6 +24,7 @@ header {
         font-size: 20px;
         width: 286px;
         margin-right: 1000px;
+
         // last child ratomgac ar mushaobs
         .last-child {
             background: linear-gradient($main-color ,$main-color) padding-box,
@@ -60,9 +63,13 @@ header {
             margin-right: 5px;
             font-family: $main-font;
         }
-        
-            
-        
+    }
+}
+@media (max-width: 1823px) {
+    header{
+        .Main-nav{
+            margin-right: 700px;
+        }
     }
 }
 .s-1 {
