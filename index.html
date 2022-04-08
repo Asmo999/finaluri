@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/564f5af832.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/global.css ">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <header class="header-flex">
@@ -53,9 +57,38 @@
         
     </header>
     <header class="mobile-header">
-        <div class="mob-start">       
-            Home
+        <div class="both">
+            <div class="logo">
+                <img src="images/Full-Logo.svg" alt="Logo">
+            </div>
+            <div>
+                <img class="User" src="images/username.svg" alt="username-logo">
+            </div>
+            <div class="hello">
+                <div class="Username">Gega_Mushni</div>
+            </div>
         </div>
+        
+        <div class="swiper mySwiper">
+            <div class="mob-mid swiper-wrapper">       
+                <div  class="swiper-slide">
+                    OVERVIEW
+                </div>
+                <div class="swiper-slide">
+                    GENRES & MOODS
+                </div>
+                <div class="swiper-slide">
+                    PODCASTS
+                </div>
+                <div class="swiper-slide">
+                    RECOMMENDATIONS
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div> 
+        
     </header>
     <section class="s-1">
         <div class="s-1-start">
@@ -215,6 +248,89 @@ with your favorite singers
             
         </div>
     </section>
+    <!-- <section class="s-2-">
+        <div class="s-2-start">
+            <div class="s-2-start-text">
+                Recently plated
+            </div>
+            <div>
+                <img src="images/next.svg" alt="">
+            </div>
+        </div>
+        <div class="s-2-end">
+            <div class="box-1">
+                <img src="images/queen.png" alt="queen">
+                <div class="box-text-1">
+                    Queen
+                </div>
+                <div class="box-text-2">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        948,117
+                    </div>
+                </div>
+            </div>
+            <div class="box-1">
+                <img src="images/PLAYLIST-RADIO.png" alt="queen">
+                <div class="box-text-1">
+                    70s Rock Anthems Radio  
+                </div>
+                
+            </div>
+            <div class="box-1">
+                <img src="images/Mask-248.png" alt="queen">
+                <div class="box-text-1">
+                    The Next Day
+                </div>
+                <div class="box-text-2">
+                    <div >
+                        Album by David Bowie
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="box-1">
+                <img src="images/PROG-ROCK.png" alt="queen">
+                <div class="box-text-1">
+                    Progressive Rock
+                </div>
+                <div class="box-text-2">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        128,045
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="box-1">
+                <img src="images/startalk.png" alt="queen">
+                <div class="box-text-1">
+                    StarTalk Radio
+                </div>
+                <div class="box-text-2">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        87,444
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="box-1">
+                <img src="images/70s-ROCK.png" alt="queen">
+                <div class="box-text-1">
+                    70s Rock Anthems
+                </div>
+                <div class="box-text-2">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        387,722
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section> -->
     <section class="s-3">
         <div class="s-3-flex">
             <div class="s-3-start">
@@ -400,5 +516,26 @@ with your favorite singers
             
         </div>
     </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>

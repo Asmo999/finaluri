@@ -155,6 +155,7 @@ header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex, .s-2 .s-2-sta
 body {
   background-color: #161A1A;
   height: 1800px;
+  color: white;
 }
 
 * {
@@ -230,10 +231,8 @@ header .End-nav .dropdown {
   cursor: pointer;
 }
 
-.mobile-header .mob-start {
-  margin: auto;
-  font-size: 50px;
-  color: white;
+.mobile-header {
+  display: none;
 }
 
 @media (max-width: 1823px) {
@@ -246,6 +245,43 @@ header .End-nav .dropdown {
   header .Main-nav {
     margin-right: 300px;
   }
+  .s-1 .box-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .s-1 .box-flex div {
+    margin-bottom: 15px;
+  }
+  .s-2 .s-2-end {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .s-2 .s-2-end div {
+    margin-bottom: 15px;
+  }
+  .s-4 .s-2-end {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .s-4 .s-2-end div {
+    margin-bottom: 15px;
+  }
+  .s-5 .s-2-end {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .s-5 .s-2-end div {
+    margin-bottom: 15px;
+  }
+  .s-6 .flex-box-1 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .s-6 .flex-box-1 div {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 1123px) {
@@ -257,14 +293,55 @@ header .End-nav .dropdown {
 }
 
 @media (max-width: 970px) {
-  .header-flex .logo {
+  .s-2 .s-2-end {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .s-2 .s-2-end div {
+    margin-bottom: 15px;
+  }
+  .header-flex {
     display: none;
   }
-  .header-flex .Main-nav {
-    display: none;
+  .mobile-header {
+    display: block;
+    margin-top: 50px;
+    max-width: 1800px;
+    width: 100%;
+    margin: auto;
   }
-  .header-flex .End-nav {
-    display: none;
+  .mobile-header .both {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mobile-header .both .logo {
+    width: 88.5px;
+    display: block;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  .mobile-header .both .mob-mid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mobile-header .both .mob-mid div {
+    color: white;
+    cursor: pointer;
+  }
+  .mobile-header .both .Username {
+    margin-left: 5px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 5px;
+    font-family: "Lato", sans-serif;
   }
 }
 

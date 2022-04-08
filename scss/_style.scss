@@ -1,6 +1,7 @@
 body {
     background-color: $main-color;
-    height: 1800px
+    height: 1800px;
+    color: white;
 }
 *{
     font-family: 'Lato', sans-serif;
@@ -71,11 +72,8 @@ header {
     }
 }
 .mobile-header{
-    .mob-start{
-        margin: auto;
-        font-size: 50px;
-        color: white;
-    }
+    display: none;
+    
 }
 @media (max-width: 1823px) {
     header{
@@ -90,6 +88,48 @@ header {
             margin-right: 300px;
         }
     }
+    .s-1 {
+        .box-flex{
+            flex-direction: column;
+            div{
+                margin-bottom: 15px;
+            }
+        }
+        
+    }
+    .s-2 {
+        .s-2-end {
+            flex-wrap: wrap;
+            
+            div{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .s-4 {
+        .s-2-end {
+            flex-wrap: wrap;
+            div{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .s-5 {
+        .s-2-end {
+            flex-wrap: wrap;
+            div{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .s-6 {
+        .flex-box-1 {
+            flex-wrap: wrap;
+            div{
+                margin-bottom: 15px;
+            }
+        }
+    }
 }
 @media (max-width: 1123px) {
     header{
@@ -101,15 +141,60 @@ header {
     }
 }
 @media (max-width: 970px) {
+    .s-2 {
+        .s-2-end {
+            flex-direction: column;
+            
+            div{
+                margin-bottom: 15px;
+            }
+        }
+    }
     .header-flex{
-        .logo{
-            display: none;
+        display: none;
+        // .logo{
+        //     display: none;
+        // }
+        // .Main-nav{
+        //     display: none;
+        // }
+        // .End-nav{
+        //     display: none;
+        // }
+    }
+    .mobile-header{
+        display: block;
+        margin-top: 50px;
+        max-width: 1800px;
+        width: 100%;
+        margin: auto;
+        .both{
+            display: flex;
+            .logo{
+            width: 88.5px;
+            display: block;
+            margin: auto;
+            align-items: center;
+            margin-bottom: 15px;
+            cursor: pointer;
         }
-        .Main-nav{
-            display: none;
+        .mob-mid {
+            display: flex;
+            div{
+                color: white;
+                cursor: pointer;
+            }
         }
-        .End-nav{
-            display: none;
+        .Username {
+            margin-left: 5px;
+            margin-top: 6px;
+            color: white;
+            margin-right: 5px;
+            font-family: $main-font;
+        }
+        
+        
+        
         }
     }
 }  
