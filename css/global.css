@@ -50,6 +50,7 @@ table {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 * {
@@ -229,6 +230,25 @@ header .End-nav .Username {
 
 header .End-nav .dropdown {
   cursor: pointer;
+  margin-left: 3px;
+  margin-right: 7px;
+}
+
+header .End-nav .nolog {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+}
+
+header .End-nav .nolog button {
+  background-color: #161A1A;
+  color: white;
+  outline: 0;
+  border: 0;
+}
+
+header .End-nav .register-login {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
 }
 
 .mobile-header {
@@ -345,6 +365,45 @@ header .End-nav .dropdown {
   }
 }
 
+@media (max-width: 720px) {
+  .s-3 {
+    width: 80%;
+  }
+  .s-3 .s-3-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .s-3 .s-3-flex div {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .s-4 {
+    width: 70%;
+  }
+  .s-4 .s-2-end {
+    margin: auto;
+    margin-left: 30px;
+  }
+  .s-4 .s-2-end div {
+    margin-bottom: 20px;
+  }
+  .s-5 .s-2-end {
+    margin-left: 15px;
+  }
+  .s-5 .s-2-end div {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .s-6 .flex-box-1 div {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
 .s-1 {
   padding-top: 118px;
 }
@@ -452,8 +511,13 @@ header .End-nav .dropdown {
   padding: 28px;
 }
 
-.s-3 .s-3-flex .s-3-start .s-3-start-3 .s-3-start-3-1 {
+.s-3 .s-3-flex .s-3-start .s-3-start-3 .color {
   margin-right: 17px;
+}
+
+.s-3 .s-3-flex .s-3-start .s-3-start-3 .color:hover {
+  cursor: pointer;
+  color: red;
 }
 
 .s-3 .s-3-flex .s-3-mid .audio {
@@ -465,6 +529,10 @@ header .End-nav .dropdown {
   color: white;
   font-family: "Lato", sans-serif;
   margin-right: 30px;
+}
+
+.s-3 .s-3-flex .s-3-end .just-hover {
+  cursor: pointer;
 }
 
 .s-3 .s-3-flex .s-3-end .just-hover .color:hover {
@@ -572,5 +640,70 @@ audio::-webkit-media-controls-current-time-display {
   font-size: 14px;
   font-family: "Lato", sans-serif;
   margin-bottom: 10px;
+}
+
+.container-1 {
+  padding: 16px;
+  background-color: white;
+  color: black;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 15px;
+  font-family: "Lato", sans-serif;
+}
+
+.container-1 a {
+  color: dodgerblue;
+}
+
+.container-1 p {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  font-stretch: expanded;
+}
+
+.container-1 input[type=text], .container-1 input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.container-1 input[type=text] input[type=text]:focus, .container-1 input[type=text] input[type=password]:focus, .container-1 input[type=password] input[type=text]:focus, .container-1 input[type=password] input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.container-1 input[type=text] hr, .container-1 input[type=password] hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #2D9BEF;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: black;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
 }
 /*# sourceMappingURL=global.css.map */

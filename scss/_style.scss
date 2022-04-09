@@ -68,6 +68,22 @@ header {
         }
         .dropdown{
             cursor: pointer;
+            margin-left: 3px;
+            margin-right: 7px;
+        }
+        .nolog {
+            font-family: $main-font;
+            font-size: 15px;
+            button {
+                background-color: $main-color;
+                color: white;
+                outline: 0; 
+                border: 0;
+            }
+        }
+        .register-login {
+                font-family: $main-font;
+                font-size: 20px;
         }
     }
 }
@@ -108,6 +124,7 @@ header {
     }
     .s-4 {
         .s-2-end {
+
             flex-wrap: wrap;
             div{
                 margin-bottom: 15px;
@@ -150,6 +167,9 @@ header {
             }
         }
     }
+    // .container-1{
+    //     width: 400px;
+    // }
     .header-flex{
         display: none;
         // .logo{
@@ -195,6 +215,46 @@ header {
         
         
         
+        }
+    }
+}
+@media (max-width: 720px) {
+    .s-3 {
+        width: 80%;
+        .s-3-flex{
+            flex-direction: column;
+            div{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .s-4 {
+        width: 70%;
+        .s-2-end{
+            margin: auto;
+            margin-left: 30px;
+            div{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .s-5 {
+        .s-2-end{
+            margin-left: 15px;
+            div{
+                margin: auto;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .s-6 {
+        .flex-box-1 {
+            div{
+                margin: auto;
+                margin-bottom: 20px
+            }
         }
     }
 }  
@@ -367,8 +427,12 @@ header {
         }
         .s-3-start-3 {
             padding: 28px;
-            .s-3-start-3-1 {
+            .color {
                 margin-right: 17px;
+                &:hover {
+                    cursor: pointer;
+                    color: red;
+                }
             }
         }
         }
@@ -386,6 +450,7 @@ header {
                 margin-right: 30px
             }
             .just-hover{
+                cursor: pointer;
                     .color{
                         &:hover{
                             color: rgb(104, 14, 14)
@@ -503,3 +568,60 @@ audio::-webkit-media-controls-current-time-display {
         @extend %flex-props;
     }
 }
+  .container-1 {
+    padding: 16px;
+    background-color: white;
+    color: black;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    font-family: $main-font;
+    a {
+        color: dodgerblue;
+      }
+    p{
+        font-family: $main-font;
+        font-size: 28px;
+        text-align: center;
+        font-stretch: expanded;
+    }
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+  }
+  }
+  .registerbtn {
+    background-color: #2D9BEF;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    &:hover{ 
+        opacity: 1;
+    }
+  }
+  
+  /* Add a blue text color to links */
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: black;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+  }
