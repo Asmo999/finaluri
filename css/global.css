@@ -64,7 +64,7 @@ header, .s-3 {
   margin: auto;
 }
 
-header .navbar, header .Main-nav, header .End-nav, .s-1 .box-flex, .s-2 .s-2-start, .s-2 .s-2-end, .s-3 .s-3-flex, .s-3 .s-3-flex .s-3-end, .s-4 .s-2-end, .s-5 .s-5-start, .s-5 .s-2-end, .s-6 .s-6-start, .s-6 .flex-box-1 {
+header .navbar, header .Main-nav, header .middle-nav, header .End-nav, .s-1 .box-flex, .s-2 .s-2-start, .s-2 .s-2-end, .s-3 .s-3-flex, .s-3 .s-3-flex .s-3-end, .s-4 .s-2-end, .s-5 .s-5-start, .s-5 .s-2-end, .s-6 .s-6-start, .s-6 .flex-box-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,8 +189,12 @@ header .Main-nav {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   width: 286px;
-  margin-right: 1000px;
+  margin-right: 300px;
   cursor: pointer;
+}
+
+header .Main-nav .browse-col {
+  color: #707070;
 }
 
 header .Main-nav .last-child {
@@ -201,6 +205,24 @@ header .Main-nav .last-child {
   border-color: transparent;
   border-radius: 30px;
   color: #2DCEEF;
+}
+
+header .middle-nav {
+  color: #707070;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  width: 400px;
+  margin-right: 300px;
+}
+
+header .middle-nav .f-ch {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+header .middle-nav > li {
+  cursor: pointer;
 }
 
 header .End-nav .font {

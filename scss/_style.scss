@@ -24,9 +24,12 @@ header {
         font-family: $main-font;
         font-size: 20px;
         width: 286px;
-        margin-right: 1000px;
+        margin-right: 300px;
         cursor: pointer;
-
+        
+        .browse-col{
+            color: #707070;
+        }
         // last child ratomgac ar mushaobs
         .last-child {
             background: linear-gradient($main-color ,$main-color) padding-box,
@@ -39,6 +42,22 @@ header {
             color: #2DCEEF;
             // color: #2DCEEF
         }
+    }
+    .middle-nav {
+        @extend %flex-props;
+        color: #707070;
+        font-family: $main-font;
+        font-size: 18px;
+        width: 400px;
+        margin-right: 300px;
+
+        .f-ch {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    .middle-nav > li {
+        cursor: pointer;
     }
     .End-nav {
         @extend %flex-props;
@@ -623,4 +642,4 @@ audio::-webkit-media-controls-current-time-display {
     text-align: center;
     max-width: 600px;
     margin: auto;
-  }
+}
