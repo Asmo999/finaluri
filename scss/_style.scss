@@ -24,9 +24,8 @@ header {
         font-family: $main-font;
         font-size: 20px;
         width: 286px;
-        margin-right: 300px;
-        cursor: pointer;
-        
+        margin-right: 905px;
+        cursor: pointer;    
         .browse-col{
             color: #707070;
         }
@@ -42,6 +41,9 @@ header {
             color: #2DCEEF;
             // color: #2DCEEF
         }
+    }
+    .browse-margin {
+        margin-right: 305px;
     }
     .middle-nav {
         @extend %flex-props;
@@ -111,8 +113,25 @@ header {
 }
 @media (max-width: 1823px) {
     header{
+        
         .Main-nav{
             margin-right: 700px;
+        }
+        .browse-margin{
+            margin-right: 170px;
+        }
+        .middle-nav {
+            margin-right: 170px;
+        }
+    }
+}
+@media (max-width: 1559px) {
+    header{
+        .browse-margin{
+            margin-right: 160px;
+        }
+        .middle-nav {
+            margin-right: 160px;
         }
     }
 }
@@ -120,6 +139,12 @@ header {
     header{
         .Main-nav{
             margin-right: 300px;
+        }
+        .browse-margin{
+            margin-right: 100px;
+        }
+        .middle-nav {
+            margin-right: 100px;
         }
     }
     .s-1 {
@@ -166,6 +191,21 @@ header {
         }
     }
 }
+@media (max-width: 1418px) {
+    header{
+        .browse-margin{
+            margin-right: 50px;
+        }
+        .middle-nav {
+            margin-right: 50px;
+        }
+    }
+}
+@media (max-width: 1320px) {
+    .diagon {
+            display: none;
+        }
+}
 @media (max-width: 1123px) {
     header{
         .Main-nav{
@@ -190,15 +230,6 @@ header {
     // }
     .header-flex{
         display: none;
-        // .logo{
-        //     display: none;
-        // }
-        // .Main-nav{
-        //     display: none;
-        // }
-        // .End-nav{
-        //     display: none;
-        // }
     }
     .mobile-header{
         display: block;
