@@ -280,6 +280,10 @@ header .End-nav .register-login {
   display: none;
 }
 
+.mobile-header-2 {
+  display: none;
+}
+
 @media (max-width: 1823px) {
   header .Main-nav {
     margin-right: 700px;
@@ -362,6 +366,57 @@ header .End-nav .register-login {
 @media (max-width: 1320px) {
   .diagon {
     display: none;
+  }
+  .mobile-header-2 {
+    display: block;
+    margin-top: 50px;
+    max-width: 1800px;
+    width: 100%;
+    margin: auto;
+  }
+  .mobile-header-2 .both-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mobile-header-2 .both-2 .logo-2 {
+    width: 38.5px;
+    display: block;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  .mobile-header-2 .both-2 .mob-mid-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mobile-header-2 .both-2 .mob-mid-2 div {
+    color: white;
+    cursor: pointer;
+  }
+  .mobile-header-2 .both-2 .Username-2 {
+    margin-left: 5px;
+    margin-top: 6px;
+    color: white;
+    margin-right: 5px;
+    font-family: "Lato", sans-serif;
+  }
+  .mobile-header-2 .auto-c-father {
+    max-width: 1320px;
+    margin: auto;
+  }
+  .mobile-header-2 .auto-c-father .auto-c {
+    width: 230px;
+    font-family: "Lato", sans-serif;
+    color: #0767e4;
+    margin: auto;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-size: 23px;
   }
 }
 
@@ -463,6 +518,11 @@ header .End-nav .register-login {
     margin: auto;
     margin-bottom: 20px;
   }
+}
+
+.width-x {
+  max-width: 650px;
+  margin: auto;
 }
 
 .s-1 {
