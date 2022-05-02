@@ -64,7 +64,7 @@ header, .s-3 {
   margin: auto;
 }
 
-header .navbar, header .Main-nav, header .middle-nav, header .End-nav, .B-S-1 .B-S-1-e .B-s-i, .s-1 .box-flex, .s-2 .s-2-start, .s-2 .s-2-end, .s-3 .s-3-flex, .s-3 .s-3-flex .s-3-end, .s-4 .s-2-end, .s-5 .s-5-start, .s-5 .s-2-end, .s-6 .s-6-start, .s-6 .flex-box-1 {
+header .navbar, header .Main-nav, header .middle-nav, header .End-nav, .B-S-1 .B-S-1-e .B-s-i, .b-s-2 .b-s-2-end .b-s-2-end-1, .s-1 .box-flex, .s-2 .s-2-start, .s-2 .s-2-end, .s-3 .s-3-flex, .s-3 .s-3-flex .s-3-end, .s-4 .s-2-end, .s-5 .s-5-start, .s-5 .s-2-end, .s-6 .s-6-start, .s-6 .flex-box-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +76,7 @@ header .navbar, header .Main-nav, header .middle-nav, header .End-nav, .B-S-1 .B
           align-items: center;
 }
 
-.B-S-1, .s-1, .s-2, .s-4, .s-5, .s-6 {
+.B-S-1, .b-s-2, .s-1, .s-2, .s-4, .s-5, .s-6 {
   max-width: 1480px;
   width: 100%;
   margin: auto;
@@ -300,6 +300,22 @@ header .End-nav .register-login {
   margin-bottom: 20px;
 }
 
+.b-s-2 {
+  padding-top: 118px;
+}
+
+.b-s-2 .b-s-2-start {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.b-s-2 .b-s-2-end .b-s-2-end-1 {
+  margin-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 @media (max-width: 1823px) {
   header .Main-nav {
     margin-right: 700px;
@@ -376,6 +392,10 @@ header .End-nav .register-login {
   }
   header .middle-nav {
     margin-right: 50px;
+  }
+  .b-s-2 .b-s-2-full .b-s-2-i {
+    margin-right: 70px;
+    margin-bottom: 6px;
   }
 }
 
@@ -516,6 +536,19 @@ header .End-nav .register-login {
   }
   .s-3 .s-3-flex div {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 627px) {
+  .B-S-1 .B-s-i div {
+    margin: auto;
+  }
+  .B-S-1 .B-s-i img {
+    width: 225px;
+    margin: auto;
+  }
+  .b-s-2 .b-s-2-end-1 div {
+    margin: auto;
   }
 }
 
