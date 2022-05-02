@@ -64,7 +64,7 @@ header, .s-3 {
   margin: auto;
 }
 
-header .navbar, header .Main-nav, header .middle-nav, header .End-nav, .s-1 .box-flex, .s-2 .s-2-start, .s-2 .s-2-end, .s-3 .s-3-flex, .s-3 .s-3-flex .s-3-end, .s-4 .s-2-end, .s-5 .s-5-start, .s-5 .s-2-end, .s-6 .s-6-start, .s-6 .flex-box-1 {
+header .navbar, header .Main-nav, header .middle-nav, header .End-nav, .B-S-1 .B-S-1-e .B-s-i, .s-1 .box-flex, .s-2 .s-2-start, .s-2 .s-2-end, .s-3 .s-3-flex, .s-3 .s-3-flex .s-3-end, .s-4 .s-2-end, .s-5 .s-5-start, .s-5 .s-2-end, .s-6 .s-6-start, .s-6 .flex-box-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +76,7 @@ header .navbar, header .Main-nav, header .middle-nav, header .End-nav, .s-1 .box
           align-items: center;
 }
 
-.s-1, .s-2, .s-4, .s-5, .s-6 {
+.B-S-1, .s-1, .s-2, .s-4, .s-5, .s-6 {
   max-width: 1480px;
   width: 100%;
   margin: auto;
@@ -284,6 +284,22 @@ header .End-nav .register-login {
   display: none;
 }
 
+.B-S-1 {
+  padding-top: 118px;
+}
+
+.B-S-1 .B-S-1-s {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.B-S-1 .B-S-1-e .B-s-i {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1823px) {
   header .Main-nav {
     margin-right: 700px;
@@ -363,6 +379,13 @@ header .End-nav .register-login {
   }
 }
 
+@media (max-width: 1366px) {
+  .B-S-1 .B-s-i .B-s-i-1 {
+    margin-right: 80px;
+    margin-bottom: 6px;
+  }
+}
+
 @media (max-width: 1320px) {
   .diagon {
     display: none;
@@ -380,7 +403,7 @@ header .End-nav .register-login {
     display: flex;
   }
   .mobile-header-2 .both-2 .logo-2 {
-    width: 38.5px;
+    width: 28.5px;
     display: block;
     margin: auto;
     -webkit-box-align: center;

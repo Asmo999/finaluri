@@ -114,6 +114,24 @@ header {
 .mobile-header-2 {
     display: none;
 }
+.B-S-1 {
+    @extend %section;
+    padding-top: 118px;
+    .B-S-1-s {
+        font-family: $main-font;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .B-S-1-e {
+        // @extend %flex-props;
+        // flex-wrap: wrap;
+        .B-s-i {
+            @extend %flex-props;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+    }
+}
 @media (max-width: 1823px) {
     header{
         
@@ -201,6 +219,16 @@ header {
         }
         .middle-nav {
             margin-right: 50px;
+        }
+    }
+}
+@media (max-width: 1366px) {
+    .B-S-1 {
+        .B-s-i {
+            .B-s-i-1 {
+                margin-right: 80px;
+                margin-bottom: 6px;
+            }
         }
     }
 }
